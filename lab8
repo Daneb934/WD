@@ -1,0 +1,502 @@
+'''ex A'''
+import math
+ 
+a = int(input())
+b = int(input())
+c = math.sqrt(b*b + a*a)
+print(c)
+'''ex B'''
+n = int(input())
+print('The next number for the number ' + str(n) + ' is ' + str(n + 1) + '.')
+print('The previous number for the number ' + str(n) + ' is ' + str(n - 1) + '.')
+'''ex C'''
+n = int(input())
+k = int(input())
+print(k // n)
+print(k % n)
+'''ex D'''
+n = int(input())
+k = int(input())
+x = k // n
+y = k - (x * n)
+print(x)
+print(y)
+'''ex E'''
+a = int(input())
+b = int(input())
+print((a * b) % 109)
+'''ex A'''
+a = int(input())
+b = int(input())
+
+if b > a:
+  print("b is greater than a")
+'''ex B'''
+
+year = int(input())
+if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
+    print('YES')
+else:
+    print('NO')
+ '''Ex C '''
+ x = int(input())
+if x > 0:
+    print(1)
+elif x == 0:
+    print(0)
+else:
+    print(-1)
+ '''Ex E '''
+a = int(input())
+b = int(input())
+if(a>b)
+print(a)
+else if(b>a)
+print(b)
+
+s=input()
+a=[int(s) for s in s.split()]
+for i in a:
+    if int(i)%2 == 0:
+       print(i, end=' ')
+
+
+a = int(input())
+if a%2 == 0:
+a = print('число четное')
+print(a)
+d = int(input())
+if d%2:
+
+n = int(input())
+i = 1
+while i ** 2 <= n:
+print(i ** 2)
+i += 1
+
+n = int(input())
+i = 2
+while n % i != 0:
+    i += 1
+print(i)
+
+a = int(input("minimum: "))
+b = int(input("maximum: "))
+n = int(input("`MOD: "))
+while a <= b:
+    m = 0
+    for i in range(1,a+1):
+        if a%i == 0:
+            m += 1
+    if m >= n:
+        print(a,'-',m,end=' - ')
+        for i in range(1,a+1):
+            if a%i == 0:
+                print(i,end=' ')
+        print()
+    a += 1
+
+su = sum(i for i in range(0, 100 + 1))
+print(su)
+
+n = int(input())
+s = 0
+i = 1
+while i <= n:
+num = int(input())
+s += num
+i+=1
+print(s)
+
+num_zeroes = 0
+for i in range(int(input())):
+    if int(input()) == 0:
+        num_zeroes += 1
+print(num_zeroes)
+
+n = int(input())
+i = 1
+while i ** 2 <= n:
+    print(i ** 2)
+    i += 1
+
+
+
+
+
+print("Hello, World!")
+
+
+N = int(raw_input().strip())
+
+if N % 2 != 0:
+    print "Weird"
+else:
+    if N >= 2 and N <= 5:
+        print "Not Weird"
+    elif N >= 6 and N <= 20:
+        print "Weird"
+    elif N > 20:
+        print "Not Weird"
+
+a = int(raw_input())
+b = int(raw_input())
+
+print a + b
+print a - b
+print a * b
+
+a=(int)(raw_input())
+b=(int)(raw_input())
+print a//b
+print a/(b*1.0)
+
+N = int(raw_input())
+
+for i in range(N):
+    print i * i
+
+    if __name__ == '__main__':
+        n = int(input())
+        for i in range(1,n+1,1):
+            print(i,end="")
+
+            def sleep_in(weekday, vacation):
+
+  return not weekday or vacation
+
+def monkey_trouble(a_smile, b_smile):
+  return a_smile == b_smile
+
+def sum_double(a, b):
+  return a+b if a != b else 2*(a+b)
+
+def diff21(n):
+  return 21-n if n < 22 else 2*(n-21)
+
+def parrot_trouble(talking, hour):
+  return talking and hour not in range(7,21)
+
+def makes10(a, b):
+  return a+b == 10 or a == 10 or b == 10
+
+def near_hundred(n):
+  return abs(n-100) < 11 or abs(n-200) < 11 
+
+def pos_neg(a, b, negative):
+  return (a < 0) ^ (b < 0) if not negative else (a < 0) and (b < 0)
+
+def not_string(str):
+  return str if str[:3] == "not" else "not " + str
+
+def missing_char(str, n):
+  return str[:n] + str[n+1:]
+
+def front_back(str):
+  return str if len(str) < 2 else str[-1] + str[1:-1] + str[0]
+
+def front3(str):
+  return str[:(3 if len(str)>3 else len(str))]*3
+
+
+
+def string_times(str, n):
+  return str*n
+
+def front_times(str, n):
+  return str[:(3 if len(str)>3 else len(str))]*n
+
+def string_bits(str):
+  return str[::2]
+
+def string_splosion(str):
+  result = ""
+  for i in range(1,len(str)+1):
+    result = result + str[:i]
+  return result
+
+def last2(str):
+  count = 0
+  for i in range(0, len(str)-2):
+    if str[i:i+2] == str[-2:]:
+      count += 1
+  return count
+
+def array_count9(nums):
+  return nums.count(9)
+
+def array_front9(nums):
+  return nums[:4].count(9) > 0
+
+def array123(nums):
+  for i in range(0,len(nums)-2):
+    if [1,2,3] == nums[i:i+3]:
+      return True
+  return False
+
+def string_match(a, b):
+  def splitter(str,n):
+    result = []
+    for i in range(0,len(str)-n+1):
+      result.append(str[i:i+n])
+    return result
+  count = 0
+  b_splitted = splitter(b,2)
+  
+  for pair in splitter(a,2):
+    if pair in splitter(b,2):
+      count += 1
+  return count
+
+def string_match(a, b):
+  def splitter(str,n):
+    result = []
+    for i in range(0,len(str)-n+1):
+      result.append(str[i:i+n])
+    return result
+    
+  count = 0
+  a_split = splitter(a,2)
+  b_split = splitter(b,2)
+  
+  for i in range(0, len(a_split) if len(a_split)<=len(b_split) else len(b_split)):
+    if a_split[i] == b_split[i]:
+      count += 1
+      
+  return count
+
+
+def hello_name(name):
+  return "Hello " + name + "!"
+
+def make_abba(a, b):
+  return a+2*b+a
+
+def make_tags(tag, word):
+  return "<"+tag+">"+word+"</"+tag+">"
+
+def make_out_word(out, word):
+  return out[:2] + word + out[2:]
+
+def extra_end(str):
+  return str[-2:]*3
+
+def first_two(str):
+  return str if len(str)<=2 else str[:2]
+
+def first_half(str):
+  return str[:len(str)/2]
+
+def without_end(str):
+  return str[1:-1]
+
+def combo_string(a, b):
+  return a+b+a if len(a)<len(b) else b+a+b
+
+def non_start(a, b):
+  return a[1:]+b[1:]
+
+def left2(str):
+  return str[2:]+str[:2]
+
+
+def first_last6(nums):
+  return 6 in [nums[0],nums[-1]]
+
+
+def same_first_last(nums):
+  return len(nums) > 0 and nums[0] == nums[-1]
+
+
+def make_pi():
+  return [3,1,4]
+
+
+def common_end(a, b):
+  return a[0] == b[0] or a[-1] == b[-1]
+
+
+def sum3(nums):
+  return sum(nums)
+
+
+def rotate_left3(nums):
+  return [nums[1], nums[2], nums[0]]
+
+def reverse3(nums):
+  return [nums[2],nums[1],nums[0]]
+
+def max_end3(nums):
+  return [nums[0]]*3 if nums[0] >= nums[-1] else [nums[-1]]*3
+
+def sum2(nums):
+   return sum(nums[:2])
+
+def middle_way(a, b):
+  return [ a[1] , b[1] ]
+
+def make_ends(nums):
+  return [ nums[0] , nums[-1] ]
+
+def has23(nums):
+  return 2 in nums or 3 in nums
+
+  def cigar_party(cigars, is_weekend):
+  return cigars >= 40 if is_weekend else cigars in range(40,61)
+
+def date_fashion(you, date):
+  if you <= 2 or date <=2:
+    return 0
+  elif you >=8 or date >=8:
+    return 2
+  else:
+    return 1
+
+def squirrel_play(temp, is_summer):
+  return temp in range(60, 101 if is_summer else 91)
+
+def caught_speeding(speed, is_birthday):
+  speeding = speed - (65 if is_birthday else 60)
+  if speeding > 20:
+    return 2
+  elif speeding > 0:
+    return 1
+  else:
+    return 0
+
+def sorta_sum(a, b):
+  return 20 if a+b in range(10,20) else a+b
+
+def alarm_clock(day, vacation):
+  pronto = "7:00" if not vacation else "10:00"
+  tarde = "10:00" if not vacation else "off"
+  return pronto if day not in [6,0] else tarde
+
+def alarm_clock(day, vacation):
+  week_preset = "7:00" if not vacation else "10:00"
+  weekend_preset = "10:00" if not vacation else "off"
+  return week_preset if day not in [6,0] else weekend_preset
+
+def love6(a, b):
+  return a == 6 or b == 6 or a+b == 6 or abs(a-b) == 6
+
+def in1to10(n, outside_mode):
+  if n == 1 or n == 10:
+    return True
+  return (n in range(1,11)) ^ outside_mode
+
+def near_ten(num):
+  within = num%((num/10)*10) if num >= 10 else num
+  return within in [8,9,0,1,2]
+
+  def make_bricks(small, big, goal):
+  resto = goal
+  resto -= 5*min(big,goal/5)
+  return resto-small <= 0
+
+def lone_sum(a, b, c):
+  sum = 0
+  sum += a if a not in [b,c] else 0
+  sum += b if b not in [a,c] else 0
+  sum += c if c not in [a,b] else 0
+  return sum
+
+def lucky_sum(a, b, c):
+  sum = 0
+  list = [a,b,c,13]
+  for n in list[:list.index(13)]:
+    sum += n
+  return sum
+
+def no_teen_sum(a, b, c):
+  def fix_teen(n):
+    return n if n not in [13,14,17,18,19] else 0
+
+  return fix_teen(a)+fix_teen(b)+fix_teen(c)
+
+def round_sum(a, b, c):
+  def round10(num):
+    return (num+5)/10*10
+
+  return round10(a)+round10(b)+round10(c)
+
+def close_far(a, b, c):
+  return (abs(abs(b)-abs(c))>=2) and \
+  ((abs(abs(b)-abs(a))<=1 and abs(abs(c)-abs(a))>=2) \
+  or (abs(abs(c)-abs(a))<=1 and abs(abs(b)-abs(a))>=2))
+
+  def double_char(str):
+  new_str = ""
+  for char in str:
+    new_str += char*2
+  return new_str
+
+def count_hi(str):
+  return str.count("hi")
+
+def cat_dog(str):
+  return str.count("cat") == str.count("dog")
+
+def count_code(str):
+  count = 0
+  i=0
+  while "co" in str[i:]:
+    if len(str[i+str[i:].index("co"):]) >= 4 and str[i+3+str[i:].index("co")] == "e":
+      count += 1
+    i += str[i:].index("co")+3
+  return count
+
+def end_other(a, b):
+  long_s, short_s = (a,b) if len(a) >= len(b) else (b,a)
+  return long_s.lower().endswith(short_s.lower())
+
+  def xyz_there(str):
+  i=0
+  while "xyz" in str[i:]:
+    if str[i-1+str[i:].index("xyz")] != ".":
+      return True
+    i += str[i:].index("xyz")+2
+  return False
+
+  def count_evens(nums):
+  count = 0
+  for n in nums:
+    count -= n%2-1
+  return count
+
+def big_diff(nums):
+  return max(nums) - min(nums)
+
+def centered_average(nums):
+  nums.sort()
+  return sum(nums[1:-1]) / (len(nums) - 2)
+
+def sum13(nums):
+  while 13 in nums:
+    if nums.index(13) < len(nums)-1:
+      nums.pop(nums.index(13)+1)
+    nums.pop(nums.index(13))
+    
+  return sum(nums)
+
+def sum67(nums):
+  count = 0
+  blocked = False
+  
+  for n in nums:
+    if n == 6:
+      blocked = True
+      continue
+    if n == 7 and blocked:
+      blocked = False
+      continue
+    if not blocked:  
+      count += n
+  
+  return count
+
+def has22(nums):
+  for i,v in enumerate(nums[:-1]):
+    if v == 2 and nums[i+1] == 2:
+      return True
+  return False
